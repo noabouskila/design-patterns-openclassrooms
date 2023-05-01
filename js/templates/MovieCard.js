@@ -29,4 +29,5 @@ class MovieCard {
         this.$wrapper.innerHTML = movieCard
         return this.$wrapper
     }
+
 }

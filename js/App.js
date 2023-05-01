@@ -24,7 +24,8 @@ class App {
         Filter.render()
 
         FullMovies.forEach(movie => {
-                const Template = new MovieCard(movie)
+            // rajout du decorator
+                const Template = movieCardWithPlayer(new MovieCard(movie))
                 this.$moviesWrapper.appendChild(
                     Template.createMovieCard()
                 )
